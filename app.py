@@ -1,5 +1,3 @@
-import pkg_resources
-st.write([p.project_name for p in pkg_resources.working_set])
 import streamlit as st
 import numpy as np
 from PIL import Image
@@ -102,4 +100,3 @@ if uploaded_file is not None:
             st.write(f"**AI Prediction:** {label}")
         else:
             st.warning("⚠️ Please draw a valid ROI (non-zero size).")
-
